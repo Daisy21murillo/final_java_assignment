@@ -1,0 +1,22 @@
+package game_week6;
+
+import java.util.List;
+
+public class Player {
+	private List<Card> hand;
+	private int score;
+	private String playerName;
+	
+	public void decribe() {
+		
+	}
+	
+	public void flip() {
+		
+	}
+	
+	public void draw(Deck deck) {
+		hand.add(deck.draw());
+	}
+
+}

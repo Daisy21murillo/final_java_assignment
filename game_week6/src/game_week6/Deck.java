@@ -1,0 +1,39 @@
+package game_week6;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Deck {
+
+	List<Card> cards = new ArrayList<Card>();
+	
+	private static final String[] number = {"One","Two", "Three", "Four", "Five", "Six", "Seven", 
+			"Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen"};
+	
+	public Deck() {
+
+		int value = 2;
+		for(int i = 0; i < 52; i += 4) {
+			cards.add(new Card(value," " + number[value - 1] + " of Spades"));
+			cards.add(new Card(value," " + number[value - 1] + " of Hearts"));
+			cards.add(new Card(value," " + number[value - 1] + " of Clubs"));
+			cards.add(new Card(value," " + number[value - 1] + " of Diamonds"));
+            
+            value++;
+		}	
+	}
+	
+	public void shuffle() {
+		Collections.shuffle(cards);
+		
+	}
+	
+	public Card draw() {
+		return cards.remove(0);
+	}
+
+
+}
+
+

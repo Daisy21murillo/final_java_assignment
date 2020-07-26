@@ -1,0 +1,15 @@
+package game_week6;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Deck {
+	private List<Card> Cards = new ArrayList<>();
+	
+	private static final String[] type = {"Spades", "Hearts", "Clubs", "Diamonds"};
+	private static final String[] number = {"One", "Two", "Three", "Four", "Five", "Six", "Seven", 
+			"Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen"};
+	
+	}
+
+}

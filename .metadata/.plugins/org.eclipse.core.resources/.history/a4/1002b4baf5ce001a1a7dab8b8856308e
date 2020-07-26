@@ -1,0 +1,12 @@
+package game_week6;
+
+import java.util.Arrays;
+
+public class App {
+
+	public static void main(String[] args) {
+		Deck deck = new Deck();
+		System.out.println(Arrays.toString(deck));
+	}
+
+}

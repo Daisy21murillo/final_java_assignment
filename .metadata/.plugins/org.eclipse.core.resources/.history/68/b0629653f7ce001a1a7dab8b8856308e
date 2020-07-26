@@ -1,0 +1,34 @@
+package game_week6;
+
+
+
+public class Deck {
+
+	Card[] cards;
+	
+	private static final String[] type = {"Spades", "Hearts", "Clubs", "Diamonds"};
+	private static final String[] number = {"One","Two", "Three", "Four", "Five", "Six", "Seven", 
+			"Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen"};
+	
+	
+	public Deck() {
+		this.cards = new Card[52];
+	
+		int value = 2;
+		for(int i = 0; i < 52; i += 4) {
+            cards[i] = new Card(value," " + number[value - 1] + " of Spades");
+            cards[i +1] = new Card(value," " + number[value - 1] + " of Hearts");
+            cards[i +2] = new Card(value," " + number[value - 1] + " of Clubs");
+            cards[i +3] = new Card(value," " + number[value - 1] + " of Diamonds");
+            System.out.println(" ");
+            
+            value++;
+		}
+		
+		
+	}
+
+
+}
+
+
